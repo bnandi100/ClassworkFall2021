@@ -3,5 +3,5 @@
 High Density lipoproteins
 This is the "good" cholesterol.
 
-Heading
+## Heading
 This section needs something.
