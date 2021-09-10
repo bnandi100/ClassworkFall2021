@@ -23,6 +23,7 @@ def calculations(diagnosis, weight_input):
     dosage_mg_per_kg = dosages_mg_per_kg[diagnosis-1]
     dosage_mg_first_day = weight * dosage_mg_per_kg
     return weight, dosage_mg_first_day
+    #can further modularize it by making a unit conversion function in which convert btw lb and kg
 
 def data_output(weight, dosage_mg_first_day):
     print("CORRECT DOSAGE")
@@ -34,7 +35,13 @@ def data_output(weight, dosage_mg_first_day):
 def program_driver():
     diag, w_input = info_input()
     wt, dose_1 = calculations(diag, w_input)
-    data_outout(wt, dose_1)
+    data_output(wt, dose_1)
+    
 
 if __name__ == '__main__':
     program_driver()
+    #diag, w_input = info_input()
+    #wt, dose_1 = calculations(diag, w_input)
+    #data_output(wt, dose_1)
+    #this part is driver part of the code, drives the function bc it needs to do each one of these things
+    #thus prob best to put in own function
